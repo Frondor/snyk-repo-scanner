@@ -1,0 +1,17 @@
+{
+  "name": "backoffice-sastify",
+  "version": "0.1.0",
+  "description": "Backoffice pipeline for creating reports by running SAST and applying custom heuristics",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tommoor/remove-markdown": "0.3.2",
+    "shelljs": "0.8.5",
+    "simple-git": "3.3.0"
+  },
+  "type": "module"
+}
