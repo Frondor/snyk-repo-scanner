@@ -13,7 +13,7 @@ Snyk tries to infer its technology by guessing the package manager to work with.
 
 1. Open a terminal and point the `cwd` to this same dir
 2. Install the script dependencies with `npm install` (this needs node 14 at least, you can use `nvm use` to match the required version)
-3. Run `node . --repos=fury_catalog-product-modificator-fe,fury_catalog-domains-admin-fe`
+3. Run `node . --repos=product-modificator,product-creator`
 
 > Notice we are passing a coma-separated list of repository names, just like they show in github, to the `--repos` argument
 
@@ -35,7 +35,7 @@ A `csv` file with each vulnerable dependency the project has, its severity, a de
 ### Execution example
 
 ```console
-node . --repos=fury_catalog-product-modificator-fe
+node . --repos=fury_product-modificator
 npx: instaló 1 en 1.306s
 
 Now redirecting you to our auth page, go ahead and log in,
@@ -48,10 +48,10 @@ https://snyk.io/login?token=******&utm_medium=cli&utm_source=cli&utm_campaign=cl
 
 Your account has been authenticated. Snyk is now ready to be used.
 
-Analysing dependencies at /Users/****/Documents/catalog-backoffice-snyk/.tmp/catalog-product-modificator-fe
+Analysing dependencies at /Users/****/Documents/catalog-backoffice-snyk/.tmp/product-modificator
 npx: instaló 1 en 1.322s
 
-Testing /Users/****/Documents/catalog-backoffice-snyk/.tmp/catalog-product-modificator-fe...
+Testing /Users/****/Documents/catalog-backoffice-snyk/.tmp/product-modificator...
 
 Tested 1315 dependencies for known issues, found 22 issues, 68 vulnerable paths.
 
@@ -112,13 +112,13 @@ Issues with no direct upgrade or patch:
 Organization:      [username]
 Package manager:   npm
 Target file:       package-lock.json
-Project name:      catalog-product-modificator-fe
+Project name:      product-modificator
 Open source:       no
-Project path:      /Users/****/Documents/catalog-backoffice-snyk/.tmp/catalog-product-modificator-fe
+Project path:      /Users/****/Documents/catalog-backoffice-snyk/.tmp/product-modificator
 Licenses:          enabled
 
 
-Analysing code at /Users/****/Documents/catalog-backoffice-snyk/.tmp/catalog-product-modificator-fe
+Analysing code at /Users/****/Documents/catalog-backoffice-snyk/.tmp/product-modificator
 npx: instaló 1 en 1.278s
 
 Generating vulnerabilities report
